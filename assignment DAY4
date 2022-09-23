@@ -1,0 +1,9 @@
+public class assignmentsum{
+public static void main(String[] args)
+{
+int sum= 0;
+for(int count = 0; count<=50; count++)
+ sum +=count;
+System.out.print("the sum is =" + sum);
+}
+}
