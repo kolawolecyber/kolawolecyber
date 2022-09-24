@@ -1,0 +1,38 @@
+	import java.util.*;
+public class guessNumber{
+
+
+	public static void main(String[] args)
+	{
+	Scanner cyber = new Scanner(System.in);
+	System.out.println("Enter the number of trial: ");
+	int k = cyber.nextInt();
+	 int number = 1 + (int)(100 * Math.random());
+	 
+	  int i, guess;
+	  System.out.println(
+	            "Guess the number between 1 to 100 in  " +  k +" trials.");
+	  for (i = 0; i < k; i++) {
+		  
+		  System.out.println("\nNumber of trial is :" + i);
+		  System.out.println( "\nGuess the number:");
+		  guess = cyber.nextInt();
+		  if (number == guess) {
+              System.out.println("Congratulations!!!  You guessed the number right.");
+       break;      
+	  }
+		  else if (number > guess) {
+             System.out.println( "The number is  greater than " + guess);
+		  }
+		  else if (number < guess) {
+             System.out.println( "The number is less than " + guess);
+		  }
+}
+	  if (i == k) {
+          System.out.println(
+              "You have exhausted "+ k + " trials.");
+
+          System.out.println( "The number was " + number);
+	  }
+	}
+}
