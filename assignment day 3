@@ -1,0 +1,22 @@
+	import java.util.*;
+public class assignmentSwap{
+
+
+	public static void main(String[] args)
+	{
+	@SuppressWarnings("resource")
+	Scanner cyber = new Scanner(System.in);
+	int x,y,swap ;
+	System.out.print("Eneter the first value:");
+	x= cyber.nextInt();
+	System.out.print("\nEneter the second value:");
+	y = cyber.nextInt();
+	System.out.print("before swaping is :" + x + "\t \t" + y);
+	x=swap;
+	x=y;
+	y=swap;
+
+	System.out.println("after swaping is :" + x + " \t\t" + y);
+
+	}
+}
